@@ -1,0 +1,11 @@
+Slide 53, 54
+
+1. You are asked to write a discount system for a beauty saloon, which provides services and sells beauty products.
+
+2. It offers 3 types of memberships: Premium, Gold and Silver. Premium, gold and silver members receive a discount of 20%, 15%, and 10%, respectively, for all services provided.
+
+3. Customers without membership receive no discount. All members receives a flat 10% discount on products purchased (this might change in future).
+
+4.Your system shall consist of three classes: Customer, Discount and Visit, as shown in the class diagram.
+
+5. It shall compute the total bill if a customer purchases $x of products and $y of services, for a visit. Also write a test program to exercise all the classes.
