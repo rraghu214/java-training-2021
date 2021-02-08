@@ -6,10 +6,11 @@ public class A {
     int def;
     protected int pro;
 
-    A(){
+    public A(){
         System.out.println(pri);
         System.out.println(pub);
         System.out.println(def);
         System.out.println(pro);
+
     }
 }

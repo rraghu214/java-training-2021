@@ -6,6 +6,9 @@ public class TestQ {
 
     public static void main(String[] args) {
 
+
+
+
         Scanner sc = new Scanner(System.in);
         String text = "What is the capital of India?";
         String answer = "New Delhi";

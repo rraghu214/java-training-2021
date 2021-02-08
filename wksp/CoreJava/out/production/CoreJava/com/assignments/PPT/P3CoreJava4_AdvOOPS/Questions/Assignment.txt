@@ -1,0 +1,17 @@
+Question class
+setText() sets the question
+setAnswer() sets the correct answer for the question entered.
+Display() – responsible for displaying the question to the user
+checkAnswer(String ans ) -> checks the answer entered by the user against the correct answer.This method retruns true
+if answer entered matches the correct answer else false.
+ChoiceQuestion  inherits Question class
+This class represents the MCQ.
+Call parent class setText() to set the question for mCQ
+choices[] – takes the array of choices max 4 for a particular question
+addChoice(String choice, Boolean correctans) -> this method adds choices in the array and calls setAnswer() of parent class
+to set the correct answer of the 4 choices.
+Display()  override from the parent class and it displays the question and all the 4 choices to choose from to the user.
+It calls checkAnswer() of parent class to verify the answer entered by the user.
+Create a Question[] that stores ChoiceQuestion objects. Display question one by one from this array for the students to solve the assessment.
+
+
