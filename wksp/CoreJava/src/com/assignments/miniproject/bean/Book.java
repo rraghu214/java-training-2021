@@ -1,10 +1,11 @@
-package com.assignments.A3.MiniProject.bean;
+package com.assignments.miniproject.bean;
 
 public class Book extends MediaItem{
     private String author;
 
-
-
+    public Book() {
+        super();
+    }
 
     public Book(int id, String title, double price, int year, String author) {
         super(id, title, price, year);
@@ -21,10 +22,8 @@ public class Book extends MediaItem{
 
     @Override
     public String toString() {
-        return "Book{" +super.toString()+
-                "author='" + author + '\''
-                + '}';
+        return "Book: " + super.toString() +
+                " author='" + author + '\''
+                ;
     }
-
-
 }

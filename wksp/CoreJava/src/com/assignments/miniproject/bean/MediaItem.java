@@ -1,4 +1,4 @@
-package com.assignments.A3.MiniProject.bean;
+package com.assignments.miniproject.bean;
 
 public abstract class MediaItem {
     private int id;
@@ -50,11 +50,10 @@ public abstract class MediaItem {
 
     @Override
     public String toString() {
-        return "MediaItem{" +
+        return
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", price=" + price +
-                ", year=" + year +
-                '}';
+                ", year=" + year ;
     }
 }

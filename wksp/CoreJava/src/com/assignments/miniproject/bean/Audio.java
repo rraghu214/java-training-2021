@@ -1,8 +1,11 @@
-package com.assignments.A3.MiniProject.bean;
+package com.assignments.miniproject.bean;
 
 public class Audio extends MediaItem{
     private String artist;
 
+    public Audio() {
+        super();
+    }
 
     public Audio(int id, String title, double price, int year, String artist) {
         super(id, title, price, year);
@@ -19,8 +22,8 @@ public class Audio extends MediaItem{
 
     @Override
     public String toString() {
-        return "Audio{" +super.toString()+
-                "artist='" + artist + '\'' +
-                '}';
+        return "Book: " + super.toString() +
+                " artist='" + artist + '\''
+                ;
     }
 }
