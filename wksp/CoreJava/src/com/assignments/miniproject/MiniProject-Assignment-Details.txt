@@ -1,0 +1,72 @@
+MINI-PROJECT 1:
+
+1)	bean package -> 
+•	MediaItem- abstract class :
+Data members : id ,title ,price,year
+Getters/Setters/Constructors/toString
+•	Book extends MediaItem
+Data members : author
+Getters/Setters/Constructors/toString
+•	Audio extends MediaItem
+Data members : artist
+Getters/Setters/Constructors/toString
+2)	ui package -> Client class with main method to call service methods depending on the client requirement : use switch case to display the menu screen to select options.
+•	Insert details
+•	Search item by id 
+•	Update Item
+•	Display Items
+•	Delete Item
+•	Exit
+Advance : Also include functionalities to 
+•	To search an item by price or year.
+3)	service package -> BookManiaLibrary class following member :
+Data member
+•	MediaItem[] [Alternatively can use ArrayList ]
+Member Methods :
+•	Constructor to initialize array with 1 book and 1 audio object
+•	Provide implementation of following methods
+i.	void addItem(MediaItem item)
+ii.	boolean searchItemById(int id) 
+iii.	MediaItem[] getItems()
+iv.	MediaItem updateItem(MediaItem item ) 
+v.	boolean deleteItem(int id) 
+Note : update , delete and search methods display appropriate message, if item could not be updated, deleted or found
+
+
+
+
+
+
+
+
+MINI-PROJECT 2
+: Extend the above project to implement exception handling, collections, database and interface
+
+
+4)	bean package -> remains the same as before
+5)	Add the following package to handle for update delete and search methods
+exception package -> ItemException (displays message item does not exist)
+6)	ui package remains the same as before
+7)	Add an interface declaring all the below methods modifying for throwing exception. Modify the code to handle ArrayList<MediaItem> and remove array
+service package -> Library interface having following methods :
+[NOTE : USE ARRAYS IF YOU DON’T KNOW COLLECTIONS]
+•	void addItem(MediaItem item)
+•	boolean searchItemById(int id) throws ItemException
+•	ArrayList<MediaItem> getItems()
+•	MediaItem updateItem(MediaItem item ) throws ItemException
+•	boolean deleteItem(int id) throws ItemException
+8)	BookManiaLibrary class now implements Library interface
+service package -> BookManiaLibrary class that implements the Library interface with following member :
+Data member
+•	ArrayList to hold collection of type MediaItem
+Member Methods :
+•	Constructor to initialize array list with 1 book and 1 audio object
+•	Provide implementation of all the methods in the Library interface.
+Note : update , delete and search methods throws ItemException if item could not be updated, deleted or found
+9)	validator package -> DataValidator class has foll static methods (RegEx)
+•	validateId() -> id has only numbers min 1 max anything
+•	validateTitle() -> title should be min 3 characters long and cannot contain symbols or numbers.
+10)	dao package -> MediaItemDao class that persists data in database
+
+
+
